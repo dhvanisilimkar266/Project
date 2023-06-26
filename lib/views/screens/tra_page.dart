@@ -23,7 +23,7 @@ class TraPage extends StatelessWidget {
                   color: Colors.red,
                 ),
                 child: Row(),
-              )
+              ),
             ],
           ),
         ),

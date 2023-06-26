@@ -18,26 +18,22 @@ class _HomePageState extends State<HomePage> {
     return Padding(
       padding: EdgeInsets.all(4),
       child: Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "Traveling App",
-            style: TextStyle(
-              fontSize: 40,
-              fontWeight: FontWeight.w800,
-              color: Colors.black,
+        body: Column(
+          children: [
+            Expanded(
+              flex: 2,
+              child: Container(
+                height: 700,
+                width: 700,
+                alignment: Alignment.topCenter,
+                child: Image.network(
+                  'https://wallpaperaccess.com/full/1241111.jpg',
+                  height: 900,
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
-          ),
-          backgroundColor: Colors.cyan,
-          centerTitle: true,
-          elevation: 0,
-        ),
-        body: Container(
-          height: double.infinity,
-          width: double.infinity,
-          decoration: BoxDecoration(color: Colors.cyan),
-          child: Image.network(
-            'https://wallpaperaccess.com/full/1241111.jpg',
-          ),
+          ],
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -46,7 +42,7 @@ class _HomePageState extends State<HomePage> {
           child: const Icon(
             Icons.arrow_right_outlined,
             color: Colors.white,
-            size: 60,
+            size: 50,
           ),
           backgroundColor: Colors.black,
         ),
